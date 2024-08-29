@@ -17,7 +17,7 @@ Default arguments,
 
 **Example**
 Client Side:
- - ❗Refer (./images/client.png)
+ - ❗Refer [Client Side Iperf](./images/client.png)
 
 Server Side:
- - ❗Refer (./images/server.png)
+ - ❗Refer [Server Side Iperf](./images/server.png)
