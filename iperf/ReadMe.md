@@ -49,3 +49,8 @@ Server Side:
   ```iperf3 -c 192.168.10.1 -f K -w 500K -R --get-server-output```
 - Set the number of parallel client streams (5 in this example), which run at the same time, using the -P options
   ```iperf3 -c 192.168.10.1 -f K -w 500K -P 5```
+
+
+
+## References:
+ - https://www.jamescoyle.net/cheat-sheets/581-iperf-cheat-sheet
