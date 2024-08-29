@@ -21,3 +21,31 @@ Client Side:
 
 Server Side:
  - ❗Refer [Server Side Iperf](./images/server.png)
+
+
+
+### Server
+- In server mode using -s flag, it will listen on port 5201 by default
+- Specify the format (k, m, g for Kbits, Mbits, Gbits or K, M, G for KBytes, Mbytes, Gbytes)
+- Report using the -f switch
+  ```iperf3 -s -f K``` 
+
+- If port 5201 is being used by another program on your server, you can specify a different port (e.g 3000) using the -p switch
+ ```iperf3 -s -p 3000```
+- Run server mode as daemon and Writing server log to a file 
+  ```iperf3 -s -D > iperf3log```
+
+### Client
+- Runs on user's local machine (the client) where the actual benchmarking takes place
+- Specify the host on which the server is running on (either using its IP address or domain or hostname)
+  ```iperf3 -c 192.168.10.1 -f K```
+- Set the window size/socket buffer size using the -w flag
+  ```iperf3 -c 192.168.10.1 -f K -w 500K```	
+- Reverse mode where the server sends and the client receives, add the -R switch
+ ```iperf3 -c 192.168.10.1 -f K -w 500K -R```
+- Bidirectional test, measure bandwidth in both directions simultaneously, use the -d option.
+  ```iperf3 -c 192.168.10.1 -f K -w 500K -d```
+- Server results in the client output, use the --get-server-output option
+  ```iperf3 -c 192.168.10.1 -f K -w 500K -R --get-server-output```
+- Set the number of parallel client streams (5 in this example), which run at the same time, using the -P options
+  ```iperf3 -c 192.168.10.1 -f K -w 500K -P 5```
