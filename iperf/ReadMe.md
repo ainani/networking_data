@@ -5,10 +5,10 @@
 
 ## Useful Commands
 
-| S.No. | Command                       | Help                                            |
-|-------|-------------------------------|-------------------------------------------------|
-| 1     | iperf -s                      | turn one of the systems in to the Iperf server  |
-| 2     | iperf3 -c <SERVER_IP_ADDRESS> | turn one of the systems in to the Iperf client  |
+| S.No. | Command                      | Help                                            |
+|-------|------------------------------|-------------------------------------------------|
+| 1     | iperf -s                     | turn one of the systems in to the Iperf server  |
+| 2     | iperf -c <SERVER_IP_ADDRESS> | turn one of the systems in to the Iperf client  |
 
 Default arguments, 
 - Protocol: TCP --> To change the interface pass ```-u``` for UDP  
@@ -17,7 +17,7 @@ Default arguments,
 
 **Example**
 Client Side:
- - ❗Refer [Client Side Iperf](./images/client.png)
+ - ❗Refer (./images/client.png)
 
 Server Side:
- - ❗Refer [Server Side Iperf](./images/server.png)
+ - ❗Refer (./images/server.png)
